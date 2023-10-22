@@ -9,6 +9,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.2.0",
+    "gh-pages": "^6.0.0",
     "isotope-layout": "^3.0.6",
     "react": "^18.2.0",
     "react-countup": "^6.3.1",
@@ -22,11 +23,14 @@
     "typewriter-effect": "^2.19.0",
     "web-vitals": "^2.1.4"
   },
+  "homepage": "https://kevindbaik.github.io",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -45,5 +49,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "postcss-svgo": "^6.0.0"
   }
 }

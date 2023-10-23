@@ -132,7 +132,7 @@ const ClassicHeader = ({ handleNavClick }) => {
                     What I Do
                   </Link>
                 </li>
-                <li className="nav-item">
+                {/* <li className="nav-item">
                   <Link
                     smooth
                     duration={500}
@@ -148,7 +148,7 @@ const ClassicHeader = ({ handleNavClick }) => {
                   >
                     Resume
                   </Link>
-                </li>
+                </li> */}
                 <li className="nav-item">
                   <Link
                     smooth
@@ -166,7 +166,7 @@ const ClassicHeader = ({ handleNavClick }) => {
                     Portfolio
                   </Link>
                 </li>
-                <li className="nav-item">
+                {/* <li className="nav-item">
                   <Link
                     smooth
                     duration={500}
@@ -182,7 +182,7 @@ const ClassicHeader = ({ handleNavClick }) => {
                   >
                     Client
                   </Link>
-                </li>
+                </li> */}
                 <li className="nav-item">
                   <Link
                     smooth

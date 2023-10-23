@@ -5,7 +5,7 @@
 		COLOR Green
 ==============================*/
 
-$green:   #28a745;
+$green:   #a72828;
 
 $primary-color: 			$green;
 $primary-color-hover: 		darken($primary-color, 7%);
@@ -170,7 +170,7 @@ a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-prima
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active{
   background-color: $primary-color-hover;
   border-color: $primary-color-hover;
-  
+
 }
 
 .btn-primary.focus, .btn-primary:focus{

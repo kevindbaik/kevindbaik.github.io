@@ -106,7 +106,7 @@ const ProjectDetailsModal = ({ darkTheme, projectDetails }) => {
                         "list-style-2 " + (darkTheme ? "list-style-light" : "")
                       }
                     >
-                      <li>
+                      {/* <li>
                         <span
                           className={
                             "text-dark font-weight-600 me-2" +
@@ -116,7 +116,7 @@ const ProjectDetailsModal = ({ darkTheme, projectDetails }) => {
                           Client:
                         </span>
                         {projectDetails?.client}
-                      </li>
+                      </li> */}
                       <li>
                         <span
                           className={
@@ -168,7 +168,7 @@ const ProjectDetailsModal = ({ darkTheme, projectDetails }) => {
                         </a>
                       </li>
                     </ul>
-                    <div className="row no-gutters align-items-center">
+                    {/* <div className="row no-gutters align-items-center">
                       <div
                         className={
                           "col-auto text-dark font-weight-600" +
@@ -241,7 +241,7 @@ const ProjectDetailsModal = ({ darkTheme, projectDetails }) => {
                           </li>
                         </ul>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>

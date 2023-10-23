@@ -4,34 +4,64 @@ const Services = ({ classicHeader, darkTheme }) => {
   // services details
   const services = [
     {
-      name: "Graphic Design",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-      icon: "fas fa-palette",
+      name: "React",
+      icon: "fa-brands fa-react",
     },
     {
-      name: "Web Design",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
+      name: "JavaScript",
+      icon: "fa-brands fa-square-js",
+    },
+    {
+      name: "Python",
+      icon: "fa-brands fa-python",
+    },
+    {
+      name: "HTML5",
+      icon: "fa-brands fa-html5",
+    },
+    {
+      name: "CSS3",
+      icon: "fa-brands fa-css3-alt",
+    },
+    {
+      name: "Redux",
+      icon: "fa-solid fa-recycle",
+    },
+    {
+      name: "Express",
+      icon: "fas fa-desktop"
+    },
+    {
+      name: "Flask",
+      icon: "fa-solid fa-pepper-hot",
+    },
+    {
+      name: "NodeJS",
+      icon: "fa-brands fa-node",
+    },
+    {
+      name: "npm",
+      icon: "fa-brands fa-npm",
+    },
+    {
+      name: "PostgreSQL",
       icon: "fas fa-desktop",
     },
     {
-      name: "UI/UX Design",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-      icon: "fas fa-pencil-ruler",
+      name: "SQLAlchemy",
+      icon: "fa-solid fa-flask",
     },
     {
-      name: "App Design & Develop",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-      icon: "fas fa-paint-brush",
+      name: "Sequelize",
+      icon: "fa-solid fa-cube",
     },
     {
-      name: "Business Analysis",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-      icon: "fas fa-chart-area",
+      name: "Docker",
+      icon: "fa-brands fa-docker",
     },
     {
-      name: "SEO Marketing",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-      icon: "fas fa-bullhorn",
+      name: "AWS",
+      icon: "fa-brands fa-aws",
     },
   ];
 
@@ -49,7 +79,7 @@ const Services = ({ classicHeader, darkTheme }) => {
               (darkTheme ? "text-white-50  opacity-1" : "text-light  opacity-4")
             }
           >
-            Services
+            Tech Stack
           </h2>
           <p
             className={
@@ -57,7 +87,7 @@ const Services = ({ classicHeader, darkTheme }) => {
               (darkTheme ? "text-white" : "text-dark")
             }
           >
-            What I Do?
+            What I Do
             <span className="heading-separator-line border-bottom border-3 border-primary d-block mx-auto" />
           </p>
         </div>
@@ -65,31 +95,25 @@ const Services = ({ classicHeader, darkTheme }) => {
         {/* content start */}
         <div className="row">
           <div className="col-lg-11 mx-auto">
-            <div className="row">
-              {services.length > 0 &&
-                services.map((service, index) => (
-                  <div className="col-md-6" key={index}>
-                    <div className="featured-box style-3 mb-5">
-                      <div
-                        className={
-                          "featured-box-icon text-primary  shadow-sm rounded " +
-                          (darkTheme ? "bg-dark-1" : "bg-white")
-                        }
-                      >
-                        <i className={service.icon} />
-                      </div>
-                      <h3 className={darkTheme ? "text-white" : ""}>
-                        {service.name}
-                      </h3>
-                      <p
-                        className={"mb-0 " + (darkTheme ? "text-white-50" : "")}
-                      >
-                        {service.desc}
-                      </p>
+          <div className="row">
+            {services.length > 0 &&
+              services.map((service, index) => (
+                <div className="col-md-4" key={index}>  {/* Adjusted size */}
+                  <div className="featured-box style-3 mb-5">
+                    <div
+                      className={
+                        "featured-box-icon text-primary  shadow-sm rounded " +
+                        (darkTheme ? "bg-dark-1" : "bg-white")
+                      }
+                    > <i className={service.icon} />
                     </div>
+                    <h3 className={darkTheme ? "text-white" : ""}>
+                      {service.name}
+                    </h3>
                   </div>
-                ))}
-            </div>
+                </div>
+              ))}
+          </div>
           </div>
         </div>
         {/* content end */}

@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import { Tooltip } from "./Tooltip";
 import { Link } from "react-scroll";
+import './style.css'
 
 const Header = ({ classicHeader, darkTheme, homeRef, handleNavClick }) => {
   const [isNavModalClose, setIsNavModalClose] = useState(true);
   return (
     <header id="header" className="sticky-top">
       {/* Navbar */}
-      <nav className="primary-menu navbar navbar-expand-lg navbar-dark bg-dark border-bottom-0">
+      <nav id='nav-container' className="primary-menu navbar navbar-expand-lg navbar-dark bg-dark border-bottom-0">
         <div className="container-fluid position-relative h-100 flex-lg-column ps-3 px-lg-3 pt-lg-3 pb-lg-2">
           {/* Logo */}
           <Link
@@ -95,7 +96,7 @@ const Header = ({ classicHeader, darkTheme, homeRef, handleNavClick }) => {
                   What I Do
                 </Link>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <Link
                   className="nav-link "
                   smooth
@@ -111,7 +112,7 @@ const Header = ({ classicHeader, darkTheme, homeRef, handleNavClick }) => {
                 >
                   Resume
                 </Link>
-              </li>
+              </li> */}
               <li className="nav-item">
                 <Link
                   className="nav-link "
@@ -129,7 +130,7 @@ const Header = ({ classicHeader, darkTheme, homeRef, handleNavClick }) => {
                   Portfolio
                 </Link>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <Link
                   className="nav-link "
                   smooth
@@ -145,7 +146,7 @@ const Header = ({ classicHeader, darkTheme, homeRef, handleNavClick }) => {
                 >
                   Testimonial
                 </Link>
-              </li>
+              </li> */}
               <li className="nav-item">
                 <Link
                   className="nav-link "

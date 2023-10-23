@@ -1,5 +1,5 @@
 import React from "react";
-import resumeFile from "../documents/resume.pdf";
+import resumeFile from "../documents/kevinbaik_resume.pdf";
 const AboutUs = ({ classicHeader, darkTheme }) => {
   return (
     <section id="about" className={"section " + (darkTheme ? "bg-dark-1" : "")}>
@@ -20,7 +20,7 @@ const AboutUs = ({ classicHeader, darkTheme }) => {
               (darkTheme ? "text-white" : "text-dark")
             }
           >
-            Know Me More
+            Nice to meet you!
             <span className="heading-separator-line border-bottom border-3 border-primary d-block mx-auto" />
           </p>
         </div>
@@ -33,18 +33,14 @@ const AboutUs = ({ classicHeader, darkTheme }) => {
                 "text-7 fw-600 mb-3 " + (darkTheme ? "text-white" : "")
               }
             >
-              My name is <span className="text-primary">Kevin Baik,</span> a Full Stack Software Engineer
+              My name is <span className="text-primary">Kevin Baik,</span> I'm a Software Engineer
             </h2>
             <p className={darkTheme ? "text-white-50" : ""}>
-              I help you build brand for your business at an affordable price.
-              Thousands of clients have procured exceptional results while
-              working with our dedicated team. when an unknown printer took a
-              galley of type and scrambled it to make a type specimen book.
+              Driven by a passion for solving problems and a love for technology, I dedicate myself to building applications that make an impression.
+              There’s a unique sense of accomplishment in cracking a complex problem or when turning an idea into a fully functional application, and it’s this feeling that affirms my love for engineering.
             </p>
             <p className={darkTheme ? "text-white-50" : ""}>
-              Delivering work within time and budget which meets client’s
-              requirements is our moto. Lorem Ipsum has been the industry's
-              standard dummy text ever when an unknown printer took a galley.
+              The most important trait I've developed on this new path is to embrace discomfort as an opportunity for growth. My daily reminder is to be comfortable feeling uncomfortable, and as long as I learn just 1% more than I did the previous day, I will become the developer I want to be.
             </p>
           </div>
           {/* About me content end */}
@@ -90,7 +86,7 @@ const AboutUs = ({ classicHeader, darkTheme }) => {
             (darkTheme ? "separator-border-light" : "")
           }
         >
-          <div className="row">
+          {/* <div className="row">
             <div className="col-6 col-md-3">
               <div className="featured-box text-center">
                 <h4
@@ -151,7 +147,7 @@ const AboutUs = ({ classicHeader, darkTheme }) => {
                 </p>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
         {/* projects rewards counting end */}
       </div>

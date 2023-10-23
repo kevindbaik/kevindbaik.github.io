@@ -17,23 +17,15 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
 
   const projectsData = [
     {
-      title: "Project Title 1",
+      title: "Rishy",
       projectInfo:
-        "Quidam lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-      client: "Ruby Clinton",
-      technologies: "iOS, HTML5, CSS3, PHP, Java",
-      industry: "Art & Design",
-      date: "July 16, 2019",
+        "A music sharing social media platform where users can post songs they're currently listening to, along with an image that encapsulates their present feelings.",
+      technologies: "React, Flask, HTML5, CSS3, PHP, Java",
+      industry: "Social Media",
+      date: "October 16th, 2023",
       url: {
-        name: "www.example.com",
-        link: "https://www.example.com",
-      },
-      socialLinks: {
-        facebook: "http://www.facebook.com/",
-        twitter: "http://www.twitter.com/",
-        google: "http://www.google.com/",
-        instagram: "http://www.instagram.com/",
-        mail: "mailto:example@gmail.com",
+        name: "www.rishy.onrender.com",
+        link: "https://rishy.onrender.com/",
       },
       thumbImage: "images/projects/project-1.jpg",
       sliderImages: [
@@ -94,110 +86,110 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
       ],
       categories: [filters.PHOTOS],
     },
-    {
-      title: "Project Title 4",
-      projectInfo:
-        "Quidam lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-      client: "Ruby Clinton",
-      technologies: "iOS, HTML5, CSS3, PHP, Java",
-      industry: "Art & Design",
-      date: "July 16, 2019",
-      url: {
-        name: "www.example.com",
-        link: "https://www.example.com",
-      },
-      socialLinks: {
-        facebook: "http://www.facebook.com/",
-        twitter: "http://www.twitter.com/",
-        google: "http://www.google.com/",
-        instagram: "http://www.instagram.com/",
-        mail: "mailto:example@gmail.com",
-      },
-      thumbImage: "images/projects/project-4.jpg",
-      sliderImages: [
-        "images/projects/project-1.jpg",
-        "images/projects/project-4.jpg",
-      ],
-      categories: [filters.BRAND, filters.PHOTOS],
-    },
-    {
-      title: "Project Title 5",
-      projectInfo:
-        "Quidam lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-      client: "Ruby Clinton",
-      technologies: "iOS, HTML5, CSS3, PHP, Java",
-      industry: "Art & Design",
-      date: "July 16, 2019",
-      url: {
-        name: "www.example.com",
-        link: "https://www.example.com",
-      },
-      socialLinks: {
-        facebook: "http://www.facebook.com/",
-        twitter: "http://www.twitter.com/",
-        google: "http://www.google.com/",
-        instagram: "http://www.instagram.com/",
-        mail: "mailto:example@gmail.com",
-      },
-      thumbImage: "images/projects/project-5.jpg",
-      sliderImages: [
-        "images/projects/project-1.jpg",
-        "images/projects/project-5.jpg",
-      ],
-      categories: [filters.DESIGN],
-    },
-    {
-      title: "Project Title 6",
-      projectInfo:
-        "Quidam lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-      client: "Ruby Clinton",
-      technologies: "iOS, HTML5, CSS3, PHP, Java",
-      industry: "Art & Design",
-      date: "July 16, 2019",
-      url: {
-        name: "www.example.com",
-        link: "https://www.example.com",
-      },
-      socialLinks: {
-        facebook: "http://www.facebook.com/",
-        twitter: "http://www.twitter.com/",
-        google: "http://www.google.com/",
-        instagram: "http://www.instagram.com/",
-        mail: "mailto:example@gmail.com",
-      },
-      thumbImage: "images/projects/project-6.jpg",
-      sliderImages: [
-        "images/projects/project-1.jpg",
-        "images/projects/project-5.jpg",
-      ],
-      categories: [filters.BRAND],
-    },
-    {
-      title: "Project Title 7",
-      projectInfo:
-        "Quidam lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-      client: "Ruby Clinton",
-      technologies: "iOS, HTML5, CSS3, PHP, Java",
-      industry: "Art & Design",
-      date: "July 16, 2019",
-      url: {
-        name: "www.example.com",
-        link: "https://www.example.com",
-      },
-      socialLinks: {
-        facebook: "http://www.facebook.com/",
-        twitter: "http://www.twitter.com/",
-        google: "http://www.google.com/",
-        instagram: "http://www.instagram.com/",
-        mail: "mailto:example@gmail.com",
-      },
-      thumbImage: "images/projects/project-7.jpg",
-      sliderImages: [
-        "images/projects/project-1.jpg",
-        "images/projects/project-5.jpg",
-      ],
-      categories: [filters.DESIGN, filters.PHOTOS],
-    },
+    // {
+    //   title: "Project Title 4",
+    //   projectInfo:
+    //     "Quidam lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
+    //   client: "Ruby Clinton",
+    //   technologies: "iOS, HTML5, CSS3, PHP, Java",
+    //   industry: "Art & Design",
+    //   date: "July 16, 2019",
+    //   url: {
+    //     name: "www.example.com",
+    //     link: "https://www.example.com",
+    //   },
+    //   socialLinks: {
+    //     facebook: "http://www.facebook.com/",
+    //     twitter: "http://www.twitter.com/",
+    //     google: "http://www.google.com/",
+    //     instagram: "http://www.instagram.com/",
+    //     mail: "mailto:example@gmail.com",
+    //   },
+    //   thumbImage: "images/projects/project-4.jpg",
+    //   sliderImages: [
+    //     "images/projects/project-1.jpg",
+    //     "images/projects/project-4.jpg",
+    //   ],
+    //   categories: [filters.BRAND, filters.PHOTOS],
+    // },
+    // {
+    //   title: "Project Title 5",
+    //   projectInfo:
+    //     "Quidam lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
+    //   client: "Ruby Clinton",
+    //   technologies: "iOS, HTML5, CSS3, PHP, Java",
+    //   industry: "Art & Design",
+    //   date: "July 16, 2019",
+    //   url: {
+    //     name: "www.example.com",
+    //     link: "https://www.example.com",
+    //   },
+    //   socialLinks: {
+    //     facebook: "http://www.facebook.com/",
+    //     twitter: "http://www.twitter.com/",
+    //     google: "http://www.google.com/",
+    //     instagram: "http://www.instagram.com/",
+    //     mail: "mailto:example@gmail.com",
+    //   },
+    //   thumbImage: "images/projects/project-5.jpg",
+    //   sliderImages: [
+    //     "images/projects/project-1.jpg",
+    //     "images/projects/project-5.jpg",
+    //   ],
+    //   categories: [filters.DESIGN],
+    // },
+    // {
+    //   title: "Project Title 6",
+    //   projectInfo:
+    //     "Quidam lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
+    //   client: "Ruby Clinton",
+    //   technologies: "iOS, HTML5, CSS3, PHP, Java",
+    //   industry: "Art & Design",
+    //   date: "July 16, 2019",
+    //   url: {
+    //     name: "www.example.com",
+    //     link: "https://www.example.com",
+    //   },
+    //   socialLinks: {
+    //     facebook: "http://www.facebook.com/",
+    //     twitter: "http://www.twitter.com/",
+    //     google: "http://www.google.com/",
+    //     instagram: "http://www.instagram.com/",
+    //     mail: "mailto:example@gmail.com",
+    //   },
+    //   thumbImage: "images/projects/project-6.jpg",
+    //   sliderImages: [
+    //     "images/projects/project-1.jpg",
+    //     "images/projects/project-5.jpg",
+    //   ],
+    //   categories: [filters.BRAND],
+    // },
+    // {
+    //   title: "Project Title 7",
+    //   projectInfo:
+    //     "Quidam lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
+    //   client: "Ruby Clinton",
+    //   technologies: "iOS, HTML5, CSS3, PHP, Java",
+    //   industry: "Art & Design",
+    //   date: "July 16, 2019",
+    //   url: {
+    //     name: "www.example.com",
+    //     link: "https://www.example.com",
+    //   },
+    //   socialLinks: {
+    //     facebook: "http://www.facebook.com/",
+    //     twitter: "http://www.twitter.com/",
+    //     google: "http://www.google.com/",
+    //     instagram: "http://www.instagram.com/",
+    //     mail: "mailto:example@gmail.com",
+    //   },
+    //   thumbImage: "images/projects/project-7.jpg",
+    //   sliderImages: [
+    //     "images/projects/project-1.jpg",
+    //     "images/projects/project-5.jpg",
+    //   ],
+    //   categories: [filters.DESIGN, filters.PHOTOS],
+    // },
   ];
 
   // initialize an Isotope object with configs
@@ -236,7 +228,7 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
             <h2
               className={
                 "text-24  text-uppercase fw-600 w-100 mb-0 " +
-                (darkTheme ? "text-muted opacity-1" : "text-light opacity-4")
+                (darkTheme ? "text-white-50  opacity-1" : "text-light opacity-4")
               }
             >
               Portfolio

@@ -20,7 +20,7 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
       title: "Rishy",
       projectInfo:
         "A music sharing social media platform where users can post songs they're currently listening to, along with an image that encapsulates their present feelings.",
-      technologies: "React, Flask, HTML5, CSS3, PHP, Java",
+      technologies: "React, Flask, HTML5, SQLAlchemy, CSS3, PostgreSQL",
       industry: "Social Media",
       date: "October 16th, 2023",
       url: {
@@ -35,16 +35,16 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
       categories: [filters.BRAND],
     },
     {
-      title: "Project Title 2",
+      title: "Petsy",
       projectInfo:
-        "Quidam lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-      client: "Ruby Clinton",
-      technologies: "iOS, HTML5, CSS3, PHP, Java",
-      industry: "Art & Design",
-      date: "July 16, 2019",
+        "An e-commerce site for pet owners to shop for handcrafted, unique products for their pets.",
+      // client: "Ruby Clinton",
+      technologies: "React, Flask, SQLAlchemy, HTML5, CSS3, PostgreSQL",
+      industry: "E-Commerce",
+      date: "October 2nd, 2023",
       url: {
-        name: "www.example.com",
-        link: "https://www.example.com",
+        name: "https://petsy-kn3b.onrender.com/",
+        link: "https://petsy-kn3b.onrender.com/",
       },
       socialLinks: {
         facebook: "http://www.facebook.com/",
@@ -61,16 +61,16 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
       categories: [filters.DESIGN],
     },
     {
-      title: "Project Title 3",
+      title: "Seedbnb",
       projectInfo:
-        "Quidam lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-      client: "Ruby Clinton",
-      technologies: "iOS, HTML5, CSS3, PHP, Java",
-      industry: "Art & Design",
-      date: "July 16, 2019",
+        "Seedbnb is a clone of Airbnb, with a focus on being able to rent and create listings for treehouses.",
+      // client: "Ruby Clinton",
+      technologies: "React, Express, Sequelize, HTML5, CSS3, PostgreSQL",
+      industry: "Lodging/Hospitality",
+      date: "September 5th, 2023",
       url: {
-        name: "www.example.com",
-        link: "https://www.example.com",
+        name: "https://api-project-rxoj.onrender.com/",
+        link: "https://api-project-rxoj.onrender.com/",
       },
       socialLinks: {
         facebook: "http://www.facebook.com/",

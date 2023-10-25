@@ -161,17 +161,17 @@ const Contact = ({ classicHeader, darkTheme }) => {
                   </a>
                 </Tooltip>
               </li> */}
-              {/* <li className="social-icons-google">
-                <Tooltip text="Google" placement="top">
+              <li className="social-icons-google">
+                <Tooltip text="LinkedIn" placement="top">
                   <a
-                    href="http://www.google.com/"
+                    href="http://www.linkedin.com/in/kevin-baik-311438193"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <i className="fab fa-google" />
+                    <i className="fa-brands fa-linkedin" />
                   </a>
                 </Tooltip>
-              </li> */}
+              </li>
               <li className="social-icons-github">
                 <Tooltip text="Github" placement="top">
                   <a

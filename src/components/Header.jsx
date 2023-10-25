@@ -167,7 +167,7 @@ const Header = ({ classicHeader, darkTheme, homeRef, handleNavClick }) => {
             </ul>
           </div>
           <ul className="social-icons social-icons-muted social-icons-sm mt-lg-auto ms-auto ms-lg-0 d-flex">
-            <li className="social-icons-facebook">
+            {/* <li className="social-icons-facebook">
               <Tooltip text="Facebook" placement="top">
                 <a
                   href="http://www.facebook.com/"
@@ -210,7 +210,29 @@ const Header = ({ classicHeader, darkTheme, homeRef, handleNavClick }) => {
                   <i className="fab fa-github" />
                 </a>
               </Tooltip>
-            </li>
+            </li> */}
+                <li className="social-icons-google">
+                <Tooltip text="LinkedIn" placement="top">
+                  <a
+                    href="http://www.linkedin.com/in/kevin-baik-311438193"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="fa-brands fa-linkedin" />
+                  </a>
+                </Tooltip>
+              </li>
+              <li className="social-icons-github">
+                <Tooltip text="Github" placement="top">
+                  <a
+                    href="http://www.github.com/kevindbaik"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="fab fa-github" />
+                  </a>
+                </Tooltip>
+              </li>
           </ul>
           <button
             onClick={(e) => {

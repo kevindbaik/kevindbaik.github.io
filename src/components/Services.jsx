@@ -4,16 +4,24 @@ const Services = ({ classicHeader, darkTheme }) => {
   // services details
   const services = [
     {
-      name: "React",
-      icon: "fa-brands fa-react",
-    },
-    {
       name: "JavaScript",
       icon: "fa-brands fa-square-js",
     },
     {
+      name: "TypeScript",
+      icon: "fa-solid fa-text-height",
+    },
+    {
+      name: "Java",
+      icon: "fa-brands fa-java",
+    },
+    {
       name: "Python",
       icon: "fa-brands fa-python",
+    },
+    {
+      name: "React",
+      icon: "fa-brands fa-react",
     },
     {
       name: "HTML5",
@@ -40,10 +48,6 @@ const Services = ({ classicHeader, darkTheme }) => {
       icon: "fa-brands fa-node",
     },
     {
-      name: "npm",
-      icon: "fa-brands fa-npm",
-    },
-    {
       name: "PostgreSQL",
       icon: "fas fa-desktop",
     },
@@ -54,10 +58,6 @@ const Services = ({ classicHeader, darkTheme }) => {
     {
       name: "Sequelize",
       icon: "fa-solid fa-cube",
-    },
-    {
-      name: "Docker",
-      icon: "fa-brands fa-docker",
     },
     {
       name: "AWS",

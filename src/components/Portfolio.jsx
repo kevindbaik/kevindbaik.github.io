@@ -10,8 +10,8 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
   const [selectedProjectDetails, setSelectedProjectDetails] = useState();
 
   const filters = {
-    DESIGN: "Desing",
-    BRAND: "Brand",
+    DESIGN: "E-commerce",
+    BRAND: "Social Media",
     PHOTOS: "Photos",
   };
 
@@ -19,29 +19,32 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
     {
       title: "Rishy",
       projectInfo:
-        "A music sharing social media platform where users can post songs they're currently listening to, along with an image that encapsulates their present feelings.",
+        "A music sharing social media platform where users can posts songs they're currently listening to, discuss their favorite songs, and create and share playlists. This project is dedicated to my best friend who loved sharing music with others.",
       technologies: "React, Flask, HTML5, SQLAlchemy, CSS3, PostgreSQL",
       industry: "Social Media",
-      date: "October 16th, 2023",
+      date: "November 2023",
       url: {
         name: "www.rishy.onrender.com",
         link: "https://rishy.onrender.com/",
       },
-      thumbImage: "images/projects/project-1.jpg",
+      thumbImage: "images/projects/rishy-thumb.png",
       sliderImages: [
-        "images/projects/project-1.jpg",
-        "images/projects/project-5.jpg",
+        "images/projects/homepage.png",
+        "images/projects/playlist.png",
+        "images/projects/profilepage.png",
+        "images/projects/profilepost.png",
+        "images/projects/profileplaylists.png",
       ],
       categories: [filters.BRAND],
+      hover: "Social Media"
     },
     {
       title: "Petsy",
       projectInfo:
-        "An e-commerce site for pet owners to shop for handcrafted, unique products for their pets.",
-      // client: "Ruby Clinton",
+        "An e-commerce site for pet owners to shop for handcrafted, unique products for their pets. Create and browse product listings, make reviews, and add anything that catches your eye to your cart! This project was done in a group with other developers.",
       technologies: "React, Flask, SQLAlchemy, HTML5, CSS3, PostgreSQL",
       industry: "E-Commerce",
-      date: "October 2nd, 2023",
+      date: "October 2023",
       url: {
         name: "https://petsy-kn3b.onrender.com/",
         link: "https://petsy-kn3b.onrender.com/",
@@ -53,18 +56,21 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
         instagram: "http://www.instagram.com/",
         mail: "mailto:example@gmail.com",
       },
-      thumbImage: "images/projects/project-2.jpg",
+      thumbImage: "images/projects/landing.png",
       sliderImages: [
-        "images/projects/project-2.jpg",
-        "images/projects/project-5.jpg",
+        "images/projects/details.png",
+        "images/projects/search.png",
+        "images/projects/tags.png",
+        "images/projects/cart.png",
+        "images/projects/checkout.png",
       ],
       categories: [filters.DESIGN],
+      hover: "E-commerce"
     },
     {
       title: "Seedbnb",
       projectInfo:
-        "Seedbnb is a clone of Airbnb, with a focus on being able to rent and create listings for treehouses.",
-      // client: "Ruby Clinton",
+        "Seedbnb is a clone of Airbnb, with a focus on being able to rent and create listings for treehouses. This was my first full stack application and is showcased today to display my growth as a developer.",
       technologies: "React, Express, Sequelize, HTML5, CSS3, PostgreSQL",
       industry: "Lodging/Hospitality",
       date: "September 5th, 2023",
@@ -79,12 +85,13 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
         instagram: "http://www.instagram.com/",
         mail: "mailto:example@gmail.com",
       },
-      thumbImage: "images/projects/project-3.jpg",
+      thumbImage: "images/projects/seedlanding.png",
       sliderImages: [
-        "images/projects/project-3.jpg",
-        "images/projects/project-5.jpg",
+        "images/projects/spotdetail.png",
+        "images/projects/create.png",
       ],
       categories: [filters.PHOTOS],
+      hover: "Homestay"
     },
     // {
     //   title: "Project Title 4",
@@ -193,26 +200,26 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
   ];
 
   // initialize an Isotope object with configs
-  useEffect(() => {
-    isotope.current = new Isotope(".portfolio-filter", {
-      itemSelector: ".filter-item",
-      layoutMode: "masonry",
-    });
+  // useEffect(() => {
+  //   isotope.current = new Isotope(".portfolio-filter", {
+  //     itemSelector: ".filter-item",
+  //     layoutMode: "masonry",
+  //   });
 
-    // cleanup
-    return () => {
-      isotope.current.destroy();
-    };
-  }, []);
+  //   // cleanup
+  //   return () => {
+  //     isotope.current.destroy();
+  //   };
+  // }, []);
 
   // handling filter key change
-  useEffect(() => {
-    if (imagesLoaded) {
-      filterKey === "*"
-        ? isotope.current.arrange({ filter: `*` })
-        : isotope.current.arrange({ filter: `.${filterKey}` });
-    }
-  }, [filterKey, imagesLoaded]);
+  // useEffect(() => {
+  //   if (imagesLoaded) {
+  //     filterKey === "*"
+  //       ? isotope.current.arrange({ filter: `*` })
+  //       : isotope.current.arrange({ filter: `.${filterKey}` });
+  //   }
+  // }, [filterKey, imagesLoaded]);
 
   const handleFilterKeyChange = (key) => () => setFilterKey(key);
 
@@ -252,36 +259,15 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
               (darkTheme ? "nav-light" : "")
             }
           >
-            <li className="nav-item">
-              <button
-                className={"nav-link " + (filterKey === "*" ? "active" : "")}
-                onClick={handleFilterKeyChange("*")}
-              >
-                All
-              </button>
-            </li>
-            {Object.keys(filters).map((oneKey, i) => (
-              <li className="nav-item" key={i}>
-                <button
-                  className={
-                    "nav-link " +
-                    (filterKey === filters[oneKey] ? "active" : "")
-                  }
-                  onClick={handleFilterKeyChange(filters[oneKey])}
-                >
-                  {filters[oneKey]}
-                </button>
-              </li>
-            ))}
           </ul>
           {/* Filter Menu end */}
-          <div className="portfolio popup-ajax-gallery">
+          <div className="portfolio popup-ajax-gallery ">
             <div className="row portfolio-filter filter-container g-4">
               {projectsData.length > 0 &&
                 projectsData.map((project, index) => (
                   <div
                     className={
-                      "col-sm-6 col-lg-4 filter-item " +
+                      "col-sm-6 col-lg-12 filter-item " +
                       project.categories.join(" ")
                     }
                     key={index}
@@ -310,7 +296,7 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
                             <h5 className="text-white fw-400">
                               {project.title}
                             </h5>
-                            <span className="text-light">Category</span>
+                            <span className="text-light">{project.hover}</span>
                           </div>
                         </div>
                       </div>

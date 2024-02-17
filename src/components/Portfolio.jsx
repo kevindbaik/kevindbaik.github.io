@@ -19,8 +19,9 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
     {
       title: "Rishy",
       projectInfo:
-        "A music sharing social media platform where users can posts songs they're currently listening to, discuss their favorite songs, and create and share playlists. This project is dedicated to my best friend who loved sharing music with others.",
-      technologies: "React, Flask, HTML5, SQLAlchemy, CSS3, PostgreSQL",
+        "A music sharing social media platform where users can posts songs they're currently listening to, discuss their favorite songs, and create and share playlists.",
+      projectPurpose: "The culmination of all the things I learned at App Academy. The entire development cycle was controlled by me and this application was delivered in a two week time frame. Rishy is dedicated to my best friend who loved to share music with others.",
+      technologies: "React, Flask, SQLAlchemy, PostgreSQL",
       industry: "Social Media",
       date: "November 2023",
       url: {
@@ -41,8 +42,9 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
     {
       title: "Petsy",
       projectInfo:
-        "An e-commerce site for pet owners to shop for handcrafted, unique products for their pets. Create and browse product listings, make reviews, and add anything that catches your eye to your cart! This project was done in a group with other developers.",
-      technologies: "React, Flask, SQLAlchemy, HTML5, CSS3, PostgreSQL",
+        "An e-commerce site for pet owners to shop for handcrafted, unique products for their pets. Create and browse product listings, make reviews, add and search for filterable tags for on products, or add anything you like to your cart!",
+      technologies: "React, Flask, SQLAlchemy, PostgreSQL",
+      projectPurpose: "This project was a collaborative effort with other developers. I gained invaluable experience while working in a shared codebase with other amazing engineers.",
       industry: "E-Commerce",
       date: "October 2023",
       url: {
@@ -70,8 +72,9 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
     {
       title: "Seedbnb",
       projectInfo:
-        "Seedbnb is a clone of Airbnb, with a focus on being able to rent and create listings for treehouses. This was my first full stack application and is showcased today to display my growth as a developer.",
-      technologies: "React, Express, Sequelize, HTML5, CSS3, PostgreSQL",
+        "Seedbnb is a clone of Airbnb, with a focus on being able to rent and create listings for treehouses.",
+      projectPurpose: "This project marks my first venture into full stack application development. Presenting it today serves as a reflective milestone, allowing me to appreciate how much I've grown as a developer.",
+      technologies: "React, Express, Sequelize, PostgreSQL",
       industry: "Lodging/Hospitality",
       date: "September 5th, 2023",
       url: {

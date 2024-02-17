@@ -93,14 +93,15 @@ const ProjectDetailsModal = ({ darkTheme, projectDetails }) => {
                       Project Info:
                     </h4>
                     <p>{projectDetails?.projectInfo}</p>
-                    <h4
+                    <p>{projectDetails?.projectPurpose}</p>
+                    {/* <h4
                       className={
                         "text-4 font-weight-600 mt-4" +
                         (darkTheme ? " text-white" : "")
                       }
                     >
                       Project Details:
-                    </h4>
+                    </h4> */}
                     <ul
                       className={
                         "list-style-2 " + (darkTheme ? "list-style-light" : "")

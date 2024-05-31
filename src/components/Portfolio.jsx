@@ -68,34 +68,7 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
       ],
       categories: [filters.DESIGN],
       hover: "E-commerce"
-    },
-    {
-      title: "Seedbnb",
-      projectInfo:
-        "Seedbnb is a clone of Airbnb, with a focus on being able to rent and create listings for treehouses.",
-      projectPurpose: "This project marks my first venture into full stack application development. Presenting it today serves as a reflective milestone, allowing me to appreciate how much I've grown as a developer.",
-      technologies: "React, Express, Sequelize, PostgreSQL",
-      industry: "Lodging/Hospitality",
-      date: "September 5th, 2023",
-      url: {
-        name: "https://api-project-rxoj.onrender.com/",
-        link: "https://api-project-rxoj.onrender.com/",
-      },
-      socialLinks: {
-        facebook: "http://www.facebook.com/",
-        twitter: "http://www.twitter.com/",
-        google: "http://www.google.com/",
-        instagram: "http://www.instagram.com/",
-        mail: "mailto:example@gmail.com",
-      },
-      thumbImage: "images/projects/seedlanding.png",
-      sliderImages: [
-        "images/projects/spotdetail.png",
-        "images/projects/create.png",
-      ],
-      categories: [filters.PHOTOS],
-      hover: "Homestay"
-    },
+    }
     // {
     //   title: "Project Title 4",
     //   projectInfo:
